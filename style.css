@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  /* background-color: #000; */
+  width: 900px;
+  max-width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card {
+  width: 33%;
+  height: auto;
+  padding: 2.5em;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  margin-bottom: 4em;
+  padding-top: -1em;
+  color: hsl(0, 0%, 100%, 0.7);
+  line-height: 2em;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 15px 40px;
+  margin: 40px 5px 10px 0;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid #fff;
+  margin: 38px 5px 9px 0;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+}
+
+.luxurys {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.luxurys button {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxurys button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  body {
+    height: 75vh;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    height: auto;
+  }
+
+  .card {
+    padding: 4em;
+  }
+
+  button {
+    margin: 20px 7px 5px 0;
+  }
+
+  button:hover {
+    margin: 18px 10px 5px 0;
+  }
+
+  .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxurys {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 15%;
+  }
+}
